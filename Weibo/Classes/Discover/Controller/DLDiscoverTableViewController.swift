@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DLDiscoverTableViewController: UITableViewController {
+class DLDiscoverTableViewController: DLMainTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

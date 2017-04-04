@@ -1,0 +1,27 @@
+[
+ {
+    "vcName": "DLHomeTableViewController",
+    "title": "首页",
+    "imageName": "tabbar_home"
+ },
+ {
+     "vcName": "DLMessageTableViewController",
+     "title": "消息",
+     "imageName": "tabbar_message_center"
+ },
+ {
+     "vcName": "DLNullViewController",
+     "title": "消息",
+     "imageName": "tabbar_message_center"
+ },
+ {
+     "vcName": "DLDiscoverTableViewController",
+     "title": "广场",
+     "imageName": "tabbar_discover"
+ },
+ {
+     "vcName": "DLProfileTableViewController",
+     "title": "我",
+     "imageName": "tabbar_profile"
+ }
+ ]

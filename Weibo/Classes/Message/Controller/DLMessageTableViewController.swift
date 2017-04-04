@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DLMessageTableViewController: UITableViewController {
+class DLMessageTableViewController: DLMainTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
