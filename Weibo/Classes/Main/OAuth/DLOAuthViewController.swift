@@ -61,19 +61,44 @@ extension DLOAuthViewController {
 extension DLOAuthViewController : UIWebViewDelegate {
     // webview开始加载
     func webViewDidStartLoad(_ webView: UIWebView) {
-        
+        SVProgressHUD.show()
     }
     // webview网页加载完成
     func webViewDidFinishLoad(_ webView: UIWebView) {
-        
+        SVProgressHUD.dismiss()
     }
     // webview加载网页失败
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
-        
+        SVProgressHUD.dismiss()
     }
     // webview开始加载网页
-//    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-//        
-//    }
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        
+        // 获取加载网页的NSURL
+        guard let url = request.url else {
+            return true
+        }
+        
+        // 获url中的字符串
+        let urlString = url.absoluteString
+        
+        // 判断该字符串中是否包含code
+        guard urlString.contains("code=") else {
+            return true
+        }
+        
+        // 将code截取出来
+        let code = urlString.components(separatedBy: "code=").last!
+        
+        //请求accessToken
+        loadAccessToken(code)
+        
+        return false
+    }
+}
+extension DLOAuthViewController {
+    fileprivate func loadAccessToken(_ code : String) {
+        
+    }
 }
 
