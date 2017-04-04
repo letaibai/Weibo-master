@@ -96,9 +96,63 @@ extension DLOAuthViewController : UIWebViewDelegate {
         return false
     }
 }
+// MARK: 请求数据
 extension DLOAuthViewController {
     fileprivate func loadAccessToken(_ code : String) {
-        
+        DLNetworkTools.sharedInstance.loadAccessToken(code) { (result, error) in
+            // 错误校验
+            if error != nil {
+              print(error as Any)
+              return
+            }
+            // 拿到结果
+            guard let accountDict = result else {
+                print("没有获取授权后的数据")
+                return
+            }
+            // 将字典转成模型对象
+            let account = DLUserAccount(dict: accountDict)
+            
+            // 请求用户信息
+            self.loadUserInfo(account)
+        }
+    }
+    fileprivate func loadUserInfo(_ account : DLUserAccount) {
+        // 获取AccessToken
+        guard let accessToken = account.accsess_token else {
+            return
+        }
+        // 获取uid
+        guard let uid = account.uid else {
+            return
+        }
+        DLNetworkTools.sharedInstance.loadUserInfo(accessToken, uid: uid) { (result, error) in
+            // 1.错误校验
+            if error != nil {
+                print(error as Any)
+                return
+            }
+            
+            //2.拿到用户信息的结果
+            guard let userInfoDict = result else {
+                return
+            }
+            
+            // 3.从字典中取出昵称和用户头像地址
+            account.screen_name = userInfoDict["screen_name"] as? String
+            account.avatar_large = userInfoDict["avatar_large"] as? String
+            
+            // 4.将account对象保存
+            NSKeyedArchiver.archiveRootObject(account, toFile: DLUserAccountViewModel.sharedInstance.accountPath)
+            
+            // 5.将account对象设置到单例对象中
+            DLUserAccountViewModel.sharedInstance.account = account
+            
+            // 6.退出当前控制器
+            self.dismiss(animated: false, completion: { 
+                UIApplication.shared.keyWindow?.rootViewController = DLWelcomeViewController()
+            })
+        }
     }
 }
 

@@ -29,6 +29,9 @@
 		ECEDD1EB1E93814D0090C8D7 /* DLVistorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD1E21E93814D0090C8D7 /* DLVistorView.swift */; };
 		ECEDD1EC1E93814D0090C8D7 /* DLVistorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEDD1E31E93814D0090C8D7 /* DLVistorView.xib */; };
 		ECEDD1EE1E93822F0090C8D7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD1ED1E93822F0090C8D7 /* Common.swift */; };
+		ECEDD1F21E9387820090C8D7 /* DLNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD1F11E9387820090C8D7 /* DLNetworkTools.swift */; };
+		ECEDD1F51E939F0C0090C8D7 /* DLWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD1F31E939F0C0090C8D7 /* DLWelcomeViewController.swift */; };
+		ECEDD1F61E939F0C0090C8D7 /* DLWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEDD1F41E939F0C0090C8D7 /* DLWelcomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		ECEDD1E21E93814D0090C8D7 /* DLVistorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLVistorView.swift; sourceTree = "<group>"; };
 		ECEDD1E31E93814D0090C8D7 /* DLVistorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLVistorView.xib; sourceTree = "<group>"; };
 		ECEDD1ED1E93822F0090C8D7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		ECEDD1F11E9387820090C8D7 /* DLNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLNetworkTools.swift; sourceTree = "<group>"; };
+		ECEDD1F31E939F0C0090C8D7 /* DLWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLWelcomeViewController.swift; sourceTree = "<group>"; };
+		ECEDD1F41E939F0C0090C8D7 /* DLWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLWelcomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 			children = (
 				ECEDD1ED1E93822F0090C8D7 /* Common.swift */,
 				EC5E55B81E8F94A000FAAEE3 /* DLButton-Extension.swift */,
+				ECEDD1F11E9387820090C8D7 /* DLNetworkTools.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -350,6 +357,8 @@
 			isa = PBXGroup;
 			children = (
 				ECEDD1D81E93814D0090C8D7 /* DLMainTableViewController.swift */,
+				ECEDD1F31E939F0C0090C8D7 /* DLWelcomeViewController.swift */,
+				ECEDD1F41E939F0C0090C8D7 /* DLWelcomeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -502,6 +511,7 @@
 				ECEDD1EC1E93814D0090C8D7 /* DLVistorView.xib in Resources */,
 				ECEDD1E91E93814D0090C8D7 /* DLOAuthViewController.xib in Resources */,
 				ECEDD1E71E93814D0090C8D7 /* MainVCSettings.json in Resources */,
+				ECEDD1F61E939F0C0090C8D7 /* DLWelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,12 +587,14 @@
 				ECEDD1E81E93814D0090C8D7 /* DLOAuthViewController.swift in Sources */,
 				EC9D65D11E8F5EB00096C57F /* DLMessageTableViewController.swift in Sources */,
 				EC9D65D31E8F5EBD0096C57F /* DLProfileTableViewController.swift in Sources */,
+				ECEDD1F51E939F0C0090C8D7 /* DLWelcomeViewController.swift in Sources */,
 				EC9D65CF1E8F5EA80096C57F /* DLDiscoverTableViewController.swift in Sources */,
 				ECEDD1D51E9380690090C8D7 /* DLTabBarViewController.swift in Sources */,
 				ECEDD1E61E93814D0090C8D7 /* DLUserAccount.swift in Sources */,
 				ECEDD1EE1E93822F0090C8D7 /* Common.swift in Sources */,
 				EC9D65CD1E8F5E9A0096C57F /* DLHomeTableViewController.swift in Sources */,
 				ECEDD1EA1E93814D0090C8D7 /* DLUserAccountViewModel.swift in Sources */,
+				ECEDD1F21E9387820090C8D7 /* DLNetworkTools.swift in Sources */,
 				ECEDD1E51E93814D0090C8D7 /* DLNullViewController.swift in Sources */,
 				ECEDD1EB1E93814D0090C8D7 /* DLVistorView.swift in Sources */,
 				EC5E55B91E8F94A000FAAEE3 /* DLButton-Extension.swift in Sources */,
