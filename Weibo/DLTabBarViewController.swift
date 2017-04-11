@@ -15,6 +15,7 @@ class DLTabBarViewController: UITabBarController {
         super.viewDidLoad()
         ///添加子控制器
         setupVC()
+       
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

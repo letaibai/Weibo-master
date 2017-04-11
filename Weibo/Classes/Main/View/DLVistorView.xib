@@ -91,13 +91,15 @@
             <connections>
                 <outlet property="discLabel" destination="K1Q-g2-uHX" id="3B0-Zf-rT9"/>
                 <outlet property="iconView" destination="TuX-we-Rbp" id="Rvj-6B-HSX"/>
+                <outlet property="login" destination="JrF-cG-Dt6" id="QZG-gA-cfN"/>
+                <outlet property="register" destination="Hlw-C4-dv3" id="W9i-rV-9rl"/>
                 <outlet property="rotateView" destination="612-on-D1h" id="Nf6-VE-lZ4"/>
             </connections>
             <point key="canvasLocation" x="161" y="-5"/>
         </view>
     </objects>
     <resources>
-        <image name="common_button_white_disable" width="11" height="9"/>
+        <image name="common_button_white_disable" width="11" height="35"/>
         <image name="visitordiscover_feed_image_house" width="94" height="90"/>
         <image name="visitordiscover_feed_image_smallicon" width="175" height="175"/>
         <image name="visitordiscover_feed_mask_smallicon" width="175" height="175"/>

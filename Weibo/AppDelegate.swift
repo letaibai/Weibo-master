@@ -14,14 +14,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var defaultViewController : UIViewController? {
+        let isLogin = DLUserAccountViewModel.sharedInstance.isLogin
+        return isLogin ? DLWelcomeViewController() : DLMainTableViewController()
+    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        // 设置全局颜色
         UINavigationBar.appearance().tintColor = UIColor.black
         UITabBar.appearance().tintColor = UIColor.black
+        
+        // 创建window
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = DLTabBarViewController()
+        window?.rootViewController = defaultViewController
         window?.makeKeyAndVisible()
+        
         return true
     }
 
