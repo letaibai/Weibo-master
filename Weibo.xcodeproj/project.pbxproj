@@ -8,7 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8AF8CC9140F4C1493E8805FD /* Pods_Weibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DC88DCAECC23A85B30791B /* Pods_Weibo.framework */; };
+		EC259E0C1E9C7B6D00B0465F /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC259E0B1E9C7B6D00B0465F /* TitleButton.swift */; };
+		EC259E0E1E9C7DD700B0465F /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC259E0D1E9C7DD700B0465F /* UIBarButtonItem-Extension.swift */; };
+		EC259E101E9C7EA200B0465F /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC259E0F1E9C7EA200B0465F /* NSDate-Extension.swift */; };
+		EC259E121E9C82B900B0465F /* DLPopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC259E111E9C82B900B0465F /* DLPopoverAnimator.swift */; };
 		EC5E55B91E8F94A000FAAEE3 /* DLButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5E55B81E8F94A000FAAEE3 /* DLButton-Extension.swift */; };
+		EC8434AC1E9C85D4008A0FA9 /* DLPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8434AB1E9C85D4008A0FA9 /* DLPresentationController.swift */; };
 		EC9D65841E8F5A820096C57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D65831E8F5A820096C57F /* AppDelegate.swift */; };
 		EC9D658B1E8F5A820096C57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9D658A1E8F5A820096C57F /* Assets.xcassets */; };
 		EC9D658E1E8F5A820096C57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9D658C1E8F5A820096C57F /* LaunchScreen.storyboard */; };
@@ -55,7 +60,12 @@
 		065AD6BB1B0967FF6A6E6E72 /* Pods-Weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weibo/Pods-Weibo.release.xcconfig"; sourceTree = "<group>"; };
 		70DC88DCAECC23A85B30791B /* Pods_Weibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F72EDC9CA985E3F18530A1F /* Pods-Weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weibo/Pods-Weibo.debug.xcconfig"; sourceTree = "<group>"; };
+		EC259E0B1E9C7B6D00B0465F /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		EC259E0D1E9C7DD700B0465F /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		EC259E0F1E9C7EA200B0465F /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		EC259E111E9C82B900B0465F /* DLPopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLPopoverAnimator.swift; path = Weibo/Classes/Tools/Category/DLPopoverAnimator.swift; sourceTree = SOURCE_ROOT; };
 		EC5E55B81E8F94A000FAAEE3 /* DLButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DLButton-Extension.swift"; sourceTree = "<group>"; };
+		EC8434AB1E9C85D4008A0FA9 /* DLPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLPresentationController.swift; path = Weibo/Classes/Tools/Category/DLPresentationController.swift; sourceTree = SOURCE_ROOT; };
 		EC9D65801E8F5A820096C57F /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9D65831E8F5A820096C57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9D658A1E8F5A820096C57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,8 +91,8 @@
 		ECEDD1E01E93814D0090C8D7 /* DLUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLUserAccountViewModel.swift; sourceTree = "<group>"; };
 		ECEDD1E21E93814D0090C8D7 /* DLVistorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLVistorView.swift; sourceTree = "<group>"; };
 		ECEDD1E31E93814D0090C8D7 /* DLVistorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLVistorView.xib; sourceTree = "<group>"; };
-		ECEDD1ED1E93822F0090C8D7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		ECEDD1F11E9387820090C8D7 /* DLNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLNetworkTools.swift; sourceTree = "<group>"; };
+		ECEDD1ED1E93822F0090C8D7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Category/Common.swift; sourceTree = "<group>"; };
+		ECEDD1F11E9387820090C8D7 /* DLNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DLNetworkTools.swift; path = Category/DLNetworkTools.swift; sourceTree = "<group>"; };
 		ECEDD1F31E939F0C0090C8D7 /* DLWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLWelcomeViewController.swift; sourceTree = "<group>"; };
 		ECEDD1F41E939F0C0090C8D7 /* DLWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLWelcomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,9 +143,9 @@
 		EC5E55B51E8F935F00FAAEE3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				ECEDD1ED1E93822F0090C8D7 /* Common.swift */,
 				EC5E55B81E8F94A000FAAEE3 /* DLButton-Extension.swift */,
-				ECEDD1F11E9387820090C8D7 /* DLNetworkTools.swift */,
+				EC259E0D1E9C7DD700B0465F /* UIBarButtonItem-Extension.swift */,
+				EC259E0F1E9C7EA200B0465F /* NSDate-Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -265,6 +275,8 @@
 		EC9D65BB1E8F5D1C0096C57F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC259E111E9C82B900B0465F /* DLPopoverAnimator.swift */,
+				EC8434AB1E9C85D4008A0FA9 /* DLPresentationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,7 +349,10 @@
 			isa = PBXGroup;
 			children = (
 				ECEDD1D41E9380690090C8D7 /* DLTabBarViewController.swift */,
+				ECEDD1ED1E93822F0090C8D7 /* Common.swift */,
+				ECEDD1F11E9387820090C8D7 /* DLNetworkTools.swift */,
 				EC5E55B51E8F935F00FAAEE3 /* Category */,
+				EC259E0B1E9C7B6D00B0465F /* TitleButton.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -587,13 +602,18 @@
 				ECEDD1E81E93814D0090C8D7 /* DLOAuthViewController.swift in Sources */,
 				EC9D65D11E8F5EB00096C57F /* DLMessageTableViewController.swift in Sources */,
 				EC9D65D31E8F5EBD0096C57F /* DLProfileTableViewController.swift in Sources */,
+				EC259E101E9C7EA200B0465F /* NSDate-Extension.swift in Sources */,
 				ECEDD1F51E939F0C0090C8D7 /* DLWelcomeViewController.swift in Sources */,
 				EC9D65CF1E8F5EA80096C57F /* DLDiscoverTableViewController.swift in Sources */,
+				EC8434AC1E9C85D4008A0FA9 /* DLPresentationController.swift in Sources */,
 				ECEDD1D51E9380690090C8D7 /* DLTabBarViewController.swift in Sources */,
 				ECEDD1E61E93814D0090C8D7 /* DLUserAccount.swift in Sources */,
+				EC259E121E9C82B900B0465F /* DLPopoverAnimator.swift in Sources */,
 				ECEDD1EE1E93822F0090C8D7 /* Common.swift in Sources */,
+				EC259E0E1E9C7DD700B0465F /* UIBarButtonItem-Extension.swift in Sources */,
 				EC9D65CD1E8F5E9A0096C57F /* DLHomeTableViewController.swift in Sources */,
 				ECEDD1EA1E93814D0090C8D7 /* DLUserAccountViewModel.swift in Sources */,
+				EC259E0C1E9C7B6D00B0465F /* TitleButton.swift in Sources */,
 				ECEDD1F21E9387820090C8D7 /* DLNetworkTools.swift in Sources */,
 				ECEDD1E51E93814D0090C8D7 /* DLNullViewController.swift in Sources */,
 				ECEDD1EB1E93814D0090C8D7 /* DLVistorView.swift in Sources */,
